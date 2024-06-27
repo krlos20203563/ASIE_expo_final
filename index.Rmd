@@ -15,7 +15,17 @@ library(flexdashboard) # always
 
 ## Intro {.sidebar}
 
-Entre las principales fuentes de investigación de este trabajo se encuentran: @noauthor_r_nodate 
+Entre las principales fuentes de investigación de este trabajo se encuentran: 
+
+- @ginocchio_legalized_2022
+- @dulin_community_2023
+- @felipe_extorsion_2024
+- @dammert_corrupcion_2017
+- @moncada_resisting_2022
+- @urrutia_tensiones_2021
+- @mininter_denuncias_2024
+- @feldmann_criminal_2023
+- @dammert_prevencion_2005
 
 ### Carátula
 
@@ -33,7 +43,7 @@ knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/
   
 En este apartado se utilizó las siguientes fuentes:
 
-- @noauthor_panel_nodate
+- @datacrim_panel_2023
 - IEP
 
 ### Comparación del promedio de denuncias según tipo de delitos elaborado con la data abierta del Observatorio Nacional de Seguridad Ciudadana
@@ -71,6 +81,12 @@ Hubo un aumento tres veces mayor en las denuncias por casos de extorsión a nive
 ```{r}
 knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/literature_review.png") 
 ```
+
+***
+
+- @feldmann_gobernanza_2022
+- @trejo_why_2018
+- @moncada_resisting_2019
 
 ### Hipótesis
 
@@ -130,20 +146,32 @@ en ciertas comisarías para identificar a qué comisarios de qué comisarías en
 ### Turnos
 
 ```{r}
-readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/2")
+readRDS("~/2024-1/ASIE/ASIE_expo_final/mapas/map_MORAN.rds")
 ```
 
 ***
 
-En este gráfico de barras se puede apreciar que, a diferencia de los delitos 
-comunes tales como hurto o robo, la modalidad extorsiva suele ocurrir durante 
-las horas del día. Es decir, en el horario mayoritariamente laboral diurno.
+En el primer gráfico, se puede observar que los hotoutliers son diez provincias 
+del Perú: Jaén, en Cajamarca; Rioja, en San Martín; Leoncio Prado, en Huánuco; 
+Padre Abad, en Ucayali; Contumaza, en Cajamarca; Trujillo, en La Libertad; 
+Hualgayoc, en Cajamarca; Angares, en Huancavelica y Azángaro, en Puno. 
 
 ### Distribución de las denuncias por comisarías
 
 ```{r}
-readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/graficos/dist3.rds")
+readRDS("~/2024-1/ASIE/ASIE_expo_final/mapas/mapa_BV.rds")
 ```
+
+***
+
+En ese sentido, las provincias que presentan estas características son: Manu, en Madre de Dios; 
+Paucartambo, en Cusco; Azángaro, en Puno; Tacna, en el departamento homónimo; 
+Abancay, en Apurímac; Angares, en Huancavelica; Aija, Recuay y Bolognesi, en Áncash; 
+Cajamarca, Hualgayoc y Contumaza, en Cajamarca; Trujillo, en La Libertad y, por último, 
+San Martín y Rioja, en el departamento de San Martín.
+
+Azángaro, en Puno; Angares, en Huancavelica; Contumaza, en Cajamarca; Trujillo,
+en La Libertad; Hualgayoc, en Cajamarca; Rioja, en San Martín
 
 ### Pendientes
 
