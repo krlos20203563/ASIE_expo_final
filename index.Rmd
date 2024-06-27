@@ -1,0 +1,154 @@
+---
+title: "Control territorial: ¿Competencia o cooperación? Factores que influyeron en el aumento de la extorsión en el Perú entre 2021 y 2023"
+bibliography: Tesis.bib
+author: Carlos Crespin
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+
+## Intro {.sidebar}
+
+Entre las principales fuentes de investigación de este trabajo se encuentran: @noauthor_r_nodate 
+
+### Carátula
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/caratula.png") 
+```
+
+### Introducción
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/introduccion.png")
+```
+
+*** 
+  
+En este apartado se utilizó las siguientes fuentes:
+
+- @noauthor_panel_nodate
+- IEP
+
+### Comparación del promedio de denuncias según tipo de delitos elaborado con la data abierta del Observatorio Nacional de Seguridad Ciudadana
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/graficos/graf1.rds")
+```
+
+***
+
+Se puede apreciar una diferencia sumamente significativa en la media de delitos patrimoniales respecto de los otros tipos de delitos
+
+### Distribución por cajas según tipos de delitos
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/graficos/graf2.rds")
+```
+
+### Tema y pregunta de investigación
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/graficos/graf4.rds")
+```
+
+***
+
+Tema: El aumento de los casos de extorsión en el Perú
+
+Pregunta: ¿Qué factores institucionales influyeron en el aumento de las denuncias por extorsión en el Perú entre 2021 al 2023?
+
+Hubo un aumento tres veces mayor en las denuncias por casos de extorsión a nivel nacional
+
+### Revisión de Literatura
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/literature_review.png") 
+```
+
+### Hipótesis
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/variables_independientes.png") 
+```
+
+### Metodología
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/metodologia.png") 
+```
+
+### Hallazgos preliminares 1: Mapa de delitos patrimoniales a nivel provincial
+
+```{r}
+readRDS("~/2024-1/ASIE/ASIE_expo_final/mapas/map3.rds")
+
+```
+
+***
+
+Se utilizó la base de datos abierta del Observatorio Nacional de Seguridad Ciudadana @noauthor_base_nodate
+
+En esta base de datos se puede apreciar lo siguiente:
+
+- Los delitos patrimoniales afectan, principalmente, a las zonas urbanizadas, salvo ciertas excepciones @juan_pablo_luna_perspectivas_2015
+
+- Las provincias más afectadas por los delitos patrimoniales son: Lima, Callao, Piura, Chiclayo, Trujillo, Pisco, Ica y Arequipa
+
+
+### Hallazgos preliminares 2: Mapa provincial de las denuncias por delitos patrimoniales
+
+```{r}
+readRDS("~/2024-1/ASIE/ASIE_expo_final/mapas/map1.rds")
+```
+
+***
+
+Según la data abierta del Observatorio, los departamentos más afectados por los 
+delitos por extorsión son: Lambayeque, La Libertad, Lima, Piura y Arequipa.
+
+Esta delimitación es todavía insuficiente
+
+### Hallazgos preliminares 3: Mapa detallado de extorsiones a nivel nacional
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/mapas/map10.rds")
+```
+
+***
+
+En este mapa se puede apreciar divisiones distritales con los distritos con más
+casos de denuncias por extorsión. De este modo, se puede establecer delimitaciones 
+en ciertas comisarías para identificar a qué comisarios de qué comisarías entrevistar
+
+### Turnos
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/2")
+```
+
+***
+
+En este gráfico de barras se puede apreciar que, a diferencia de los delitos 
+comunes tales como hurto o robo, la modalidad extorsiva suele ocurrir durante 
+las horas del día. Es decir, en el horario mayoritariamente laboral diurno.
+
+### Distribución de las denuncias por comisarías
+
+```{r}
+readRDS("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/graficos/dist3.rds")
+```
+
+### Pendientes
+
+```{r}
+knitr::include_graphics("C:/Users/Carlos Daniel/Documents/Tesis_de_Licenciatura/Delincuencia_en_el_Peru/imagenes/pendientes.png") 
+```
+
+### References
